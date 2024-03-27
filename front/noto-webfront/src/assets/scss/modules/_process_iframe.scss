@@ -1,0 +1,11 @@
+.process-iframe {
+  height: 100vh;
+
+  @media screen and (min-width: 940px) {
+    border-radius: 35px;
+    padding-top: 35px;
+    height: 83vh;
+    max-height: 800px;
+    min-height: 750px;
+  }
+}

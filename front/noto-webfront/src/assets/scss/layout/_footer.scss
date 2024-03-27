@@ -1,0 +1,89 @@
+.editUserInformation,
+.selectMerchants,
+.onboardingComplete,
+.confirmationCode,
+.welcomePage {
+    &-footer {
+        width: 100%;
+    }
+}
+
+.editUserInformation,
+.selectMerchants,
+.welcomePage,
+.confirmationCode {
+    &-footer {
+        padding: 11px;
+    }
+}
+
+
+.editUserInformation,
+.selectMerchants,
+.confirmationCode {
+    &-footer {
+        background: $color_athens-gray;
+    }
+}
+
+.welcomePage {
+    &-footer {
+        background: $color_white;
+    }
+}
+
+.welcomePage,
+.editUserInformation,
+.selectMerchants,
+.onboardingComplete,
+.confirmationCode {
+    &-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: 940px) {
+            width: 372px;
+        }
+    }
+}
+
+.editUserInformation {
+    &-footer {
+        z-index: 1;
+    }
+}
+
+.onboardingComplete,
+.confirmationCode,
+.welcomePage {
+    &-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+
+        @media screen and (min-width: 940px) {
+            bottom: 28px;
+        }
+    }
+}
+
+.welcomePage,
+.onboardingComplete,
+.confirmationCode {
+    &-footer {
+        @media screen and (min-width: 940px) {
+            left: 28px;
+            border-bottom-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+        }
+    }
+}
+
+.onboardingComplete {
+    &-footer {
+        padding: 30px;
+        z-index: 1;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,14 @@
+/* open-sans-regular - latin */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('~@/assets/fonts/open_sans/open-sans-v26-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('~@/assets/fonts/open_sans/open-sans-v26-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('~@/assets/fonts/open_sans/open-sans-v26-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('~@/assets/fonts/open_sans/open-sans-v26-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('~@/assets/fonts/open_sans/open-sans-v26-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('~@/assets/fonts/open_sans/open-sans-v26-latin-regular.svg') format('svg'); /* Legacy iOS */
+}

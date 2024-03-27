@@ -1,0 +1,29 @@
+.loader_mini {
+    &-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      color: #5b88da;
+      font-size: 20px;
+    }
+  
+    &-icon {
+      width: 50px;
+      height: 50px;
+  
+      color: #5b88da;
+  
+      animation: spin 2s linear infinite;
+    }
+  
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }

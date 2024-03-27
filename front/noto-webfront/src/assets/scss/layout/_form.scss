@@ -1,0 +1,42 @@
+.custom-radio-container {
+  @include custom-radio-container(
+          $width: 36px,
+          $height: 21px,
+          $background: $color_white,
+          $bullet-width: 20px,
+          $bullet-background: $color_gull-gray,
+          $bullet-border-color: $color_white,
+          $label-color: $color_manatee,
+          $label-color-active: $color-blue-zodiac,
+          $background_active: '',
+          $bullet-background-active: $color_darkgreen,
+          $bullet-border-color-active: ''
+  );
+
+  &--blue {
+    @include custom-radio-container(
+            $width: 43px,
+            $height: 26px,
+            $background: $color_athens-gray,
+            $bullet-width: 25px,
+            $bullet-background: $color_gull-gray,
+            $bullet-border-color: $color_athens-gray,
+            $label-color: #143642,
+            $label-color-active: $color_blue,
+            $background_active: $color_blue,
+            $bullet-background-active: $color_athens-gray,
+            $bullet-border-color-active: $color_blue
+    );
+    span.text {
+      font-weight: 700;
+    }
+  }
+}
+
+.checkbox-container {
+  @include checkbox-container($background-color: $color_white, $check_color: $color_darkgreen, $label-color: $color_manatee, $label-color-active: $color_blue-zodiac);
+
+  &--blue {
+    @include checkbox-container($background-color: $color_athens-gray, $check_color: $color_blue, $label-color: $color_silver-chalice, $label-color-active: $color_silver-chalice);
+  }
+}

@@ -1,0 +1,65 @@
+.editUserInformation,
+.welcomePage,
+.selectMerchants,
+.confirmationCode,
+.headerSteps {
+    header {
+        svg {
+            font-size: 25px;
+        }
+    }
+}
+
+.editUserInformation,
+.selectMerchants,
+.confirmationCode,
+.headerSteps {
+    &-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+.editUserInformation,
+.selectMerchants,
+.headerSteps {
+    &-header {
+        padding: 15px;
+    }
+}
+
+.editUserInformation,
+.headerSteps {
+    &-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $color_white;
+
+        @media screen and (min-width: 940px) {
+            left: 28px;
+            top: 40px;
+            width: 372px;
+            border-top-left-radius: 35px;
+            border-top-right-radius: 35px;
+        }
+    }
+}
+
+.onboardingComplete {
+    &-header {
+        display: flex;
+        padding: 28px;
+        justify-content: center;
+    }
+}
+
+.confirmationCode {
+    &-header {
+        padding: 15px 0;
+    }
+}

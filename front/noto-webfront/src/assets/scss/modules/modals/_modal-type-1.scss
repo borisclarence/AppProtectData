@@ -1,0 +1,60 @@
+.modalAddEmails,
+.modalAddMobiles,
+.modalConfirmSign {
+    &-container {
+        padding: 28px 32px;
+        border-radius: 2px;
+        width: 350px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+
+    &-footer {
+        display: flex;
+        align-items: center;
+    }
+
+    &-buttonCancel {
+        border-radius: 0.25rem;
+        background: rgba(93, 137, 218, 0.2);
+        color: $color_black;
+        padding: 8px 20px 5px;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $font_bebas-neue;
+        text-transform: uppercase;
+
+        &:hover {
+            background: $color_blue;
+            color: $color_white;
+        }
+    }
+
+    &-buttonSign {
+        border-radius: 0.25rem;
+        background: $color_blue;
+        color: $color_white;
+        padding: 8px 20px 5px;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $font_bebas-neue;
+        text-transform: uppercase;
+    }
+
+    &-iconSign {
+        width: 10px;
+    }
+}
+
+.modalAddEmails,
+.modalAddMobiles {
+    &-footer {
+        justify-content: center;
+    }
+}
+
+.modalConfirmSign {
+    &-footer {
+        justify-content: space-between;
+    }
+}

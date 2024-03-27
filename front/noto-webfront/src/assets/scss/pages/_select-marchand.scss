@@ -1,0 +1,316 @@
+.device-inset__container,
+.device-inset__content {
+  height: 100%;
+}
+
+.selectMerchants {
+  color: $color_darkgreen;
+
+  @media screen and (min-width: 940px) {
+    height: 100%;
+  }
+
+  &-wrapper {
+    @media screen and (min-width: 940px) {
+      height: 100%;
+    }
+  }
+
+  &-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 940px) {
+      min-height: 100%;
+      padding-top: 12px;
+    }
+
+    .selectMerchants-section {
+      flex-grow: 1;
+      height: calc(100vh - 125px);
+      overflow-y: hidden;
+
+      @media screen and (min-width: 940px) {
+        height: calc(752px/2);
+      }
+    }
+  }
+
+  &-errors {
+    color: $color_red-error;
+    font-weight: bold;
+  }
+
+  &-headerSign {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px 0;
+
+    @media screen and (min-width: 940px) {
+      left: 28px;
+      top: 40px;
+      width: 372px;
+      border-top-left-radius: 35px;
+      border-top-right-radius: 35px;
+    }
+  }
+
+  &-merchants {
+    @media screen and (min-width: 940px) {
+      height: 65%;
+    }
+  }
+
+  &-countAllMerchants {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: $color_blue;
+
+    &.isBordered {
+      padding: 8px 0;
+      border-bottom: 3px solid $color_jungle-mist;
+    }
+  }
+
+  &-newCountAllMerchants {
+    color: $color_blue;
+    padding: 8px 0;
+    border-bottom: 2px solid $color_jungle-mist;
+
+    &.isBordered {
+      padding: 8px 0;
+      border-bottom: 3px solid $color_jungle-mist;
+    }
+  }
+
+  &-spaceMerchantList {
+    // margin-bottom: 10px; 
+    // margin-left: 20px;
+    padding: 10px 50px;
+  }
+
+  &-toggleParent {
+    margin: 12px 0;
+    background: #f1f1f3;
+    padding: 8px 10px 17px 10px;
+    border-radius: 4px;
+  }
+
+  &-contentToggleParent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+    // border-bottom: 1px solid gray; 
+  }
+
+  &-titleCountMerchants {
+    font-weight: bold;
+  }
+
+  &-section {
+    padding: 10px 15px;
+    margin: 45px auto;
+  }
+
+  &-title {
+    font-size: 27px;
+    font-weight: bold;
+    font-family: $font_bebas-neue;
+    text-transform: uppercase;
+    line-height: 32px;
+  }
+
+  &-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    padding: 8px 0;
+  }
+
+  &-globalCategories {
+    height: 80%;
+    overflow: hidden;
+  }
+
+  &-listAllCategories {
+    margin: 12px 0;
+    overflow: auto;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+    @media screen and (min-width: 940px) {
+      height: 100%;
+    }
+      
+    &::-webkit-scrollbar {
+      display: none;  /* Safari and Chrome */
+    }
+  }
+
+  &-countMerchants {
+    font-weight: bold;
+    color: $color_blue;
+    border-bottom: 1px solid gray;
+    padding: 8px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-checkBoxAll {
+    margin-right: 0.4rem;
+  }
+
+  &-checkMerchants {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 1.5rem;
+    padding: 2px;
+    background-color: $color_jungle-mist;
+    transition: all 0.5s;
+
+    &::before {
+      box-sizing: border-box;
+      display: block;
+      content: "";
+      height: calc(1.5rem - 4px);
+      width: calc(1.5rem - 4px);
+      border-radius: 50%;
+      background-color: $color_white;
+      transition: all 0.5s;
+    }
+  }
+
+  &-checkMerchants:checked {
+    background-color: $color_cerulean;
+
+    &::before {
+      margin-left: 1.5rem;
+    }
+  }
+
+  &-listMerchants {
+    border-radius: 4px;
+    background: $color_athens-gray;
+    padding: 8px 10px 17px;
+    margin-bottom: 10px;
+    max-height: calc(100vh - 335px);
+    overflow-y: auto;
+
+    @media screen and (min-width: 940px) {
+      //max-height: calc(100vh - 620px);
+      //max-height: 460px;
+      max-height: 100%;
+    }
+
+    @media (orientation: landscape) and (min-width: 568px) and (max-width: 939px) {
+      margin-bottom: 20px;
+    }
+
+    > div {
+      @media screen and (min-width: 940px) {
+        //height: calc(100vh - 488px);
+        height: 100%;
+        padding-bottom: 10px;
+        
+        // &:last-child{
+        //   padding-bottom: 40px;
+        // }
+        // padding: 15px 50px 80px 35px;
+      }
+
+      @media (orientation: landscape) and (min-width: 568px) and (max-width: 939px) {
+        overflow-y: unset;
+        height: unset;
+        min-height: unset;
+        max-height: unset;
+      }
+    }
+
+    > div.selectMerchants-group {
+      padding: 15px 50px 35px 15px;
+      scrollbar-color: $color_darkgreen $color_athens-gray;
+      scrollbar-width: thin;
+
+      &.addSpace {
+        padding: 15px 50px;
+      }
+
+      &::-webkit-scrollbar {
+        width: 2px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: $color_athens-gray;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $color_darkgreen;
+      }
+
+      > li:not(:last-child) {
+        padding-bottom: 22px;
+      }
+    }
+  }
+
+  &-oneMerchant,
+  &-oneMerchantWithoutExpense {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-oneMerchantText {
+    font-weight: bold;
+  }
+  
+  &-textMerchantSelectedCount {
+    color: $color_blue;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-bottom: 5px;
+  }
+
+  &-icon {
+    margin-right: 5px;
+    transform: rotate(0deg);
+    transition: all .5s;
+
+    &.active {
+      transition: all .5s;
+      transform: rotate(180deg);
+    }
+  }
+
+  &-texts {
+    transition: transform 0.5s;
+    border-radius: 4px;
+    background: $color_blue;
+  }
+
+  &-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.checkbox-container--blue .checkmark {
+  &.light {
+    background: $color_white;
+
+    &::after {
+      background: $color_darkgreen;
+    }
+  }
+}

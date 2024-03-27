@@ -1,0 +1,42 @@
+// FONTS
+@import 'font/bebas_neue',
+        'font/gudea',
+        'font/roboto';
+
+// UTILITIES
+@import 'utilities/variables',
+        'utilities/mixins';
+
+// MODULES
+@import 'modules/select-marchand-list',
+        'modules/button',
+        'modules/fields/input-text',
+        'modules/modals/modal-general',
+        'modules/modals/modal-type-1',
+        'modules/modals/modal-type-2',
+        'modules/modals/modal-display-manifesto',
+        'modules/mockup-iphone',
+        'modules/loader',
+        'modules/loader_mini',
+        'modules/process_iframe',
+        'modules/messages/errors/message_error-session',
+        'modules/step-indicator';
+
+// BASE
+@import 'base/general';
+
+// PAGES
+@import 'pages/homepage',
+        'pages/edit-user-informations',
+        'pages/onboarding-complete',
+        'pages/select-marchand',
+        'pages/confirmation-code';
+
+// LAYOUT
+@import 'layout/form',
+        'layout/header',
+        'layout/footer';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

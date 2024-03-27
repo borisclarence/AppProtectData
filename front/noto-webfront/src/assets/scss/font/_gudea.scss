@@ -1,0 +1,14 @@
+/* gudea-regular - latin */
+
+@font-face {
+    font-family: 'Gudea';
+    font-style: normal;
+    font-weight: 400;
+    src: url('~@/assets/fonts/gudea/Gudea-Regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('~@/assets/fonts/gudea/Gudea-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('~@/assets/fonts/gudea/Gudea-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('~@/assets/fonts/gudea/Gudea-Regular.woff') format('woff'), /* Modern Browsers */
+    url('~@/assets/fonts/gudea/Gudea-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('~@/assets/fonts/gudea/Gudea-Regular.svg') format('svg'); /* Legacy iOS */
+}

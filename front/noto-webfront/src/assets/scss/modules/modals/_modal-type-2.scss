@@ -1,0 +1,53 @@
+.modalNoMerchantsSelected,
+.modalStopEnrolment,
+.modalUserExists {
+    &-container {
+        width: 310px;
+        padding: 37px 0 33px;
+        border-radius: 5px;
+        border: 1px solid $color_gull-gray;
+
+        @media screen and (min-width: 375px) {
+            width: 345px;
+        }
+    }
+
+    &-body {
+        font-weight: 700;
+        margin: 0 auto;
+        max-width: 200px;
+    }
+
+    &-actions {
+        display: flex;
+        justify-content: space-between;
+        max-width: 292px;
+        margin: 0 auto;
+    }
+
+    &-button {
+        width: fit-content;
+        display: block;
+        margin-top: 20px;
+        border-radius: 4px;
+        padding: 8px 20px 5px;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $font_bebas-neue;
+        text-transform: uppercase;
+        background: $color_blue;
+        color: $color_white;
+
+        &--light {
+            background: rgba(93, 137, 218, 0.3);
+            color: rgba(20, 54, 66, 0.7);
+        }
+    }
+}
+
+.modalNoMerchantsSelected {
+    &-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

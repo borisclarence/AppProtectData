@@ -1,0 +1,56 @@
+.welcomePage {
+  &-wrapper {
+    position: relative;
+
+    height: 100%;
+    overflow: auto;
+
+    .welcomePage-closeIcon {
+      padding: 15px;
+      top: 0;
+      right: 0;
+
+      @media screen and (min-width: 940px) {
+        top: 12px;
+      }
+    }
+
+    .welcomePage-section {
+      padding: 0 45px;
+
+      padding-bottom: 45px;
+      margin-bottom: 45px;
+
+      .welcomePage-text {
+        max-width: 500px;
+        margin: 0 auto;
+        padding-top: 33%;
+        padding-bottom: 25%;
+        text-align: center;
+        font-family: $font_bebas-neue;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 32px;
+      }
+
+      .welcomePage-picture {
+        text-align: center;
+
+        img {
+          margin: 10px auto 0;
+          max-width: 140px;
+        }
+
+        .welcomePage-link {
+          cursor: pointer;
+          margin-top: 10px;
+          display: block;
+          font-size: 13px;
+          color: $color_blue;
+          text-decoration: underline;
+          text-decoration-color: $color_blue;
+        }
+      }
+    }
+  }
+}

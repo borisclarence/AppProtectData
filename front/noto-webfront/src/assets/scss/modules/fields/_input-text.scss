@@ -1,0 +1,60 @@
+.inputText {
+    &-fields {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-label {
+        color: $color_manatee;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: left;
+    }
+
+    &-input {
+        outline: solid $color_white thin;
+        border: 1px solid $color_white;
+        margin-top: 5px;
+        background: rgb(241, 241, 243);
+        border-radius: 25px;
+        padding: 10px 16px;
+
+        input {
+            background: rgb(241, 241, 243);
+        }
+
+        &:focus {
+            border: 1px solid $color_gull-gray;
+            outline: solid $color_gull-gray thin;
+            background-color: $color_platinium;
+        }
+
+        &.error_input {
+            background: $color_oyster-pink;
+            border-radius: 25px;
+            padding: 10px 16px;
+            border: 1px solid $color_red-error;
+
+            &:focus {
+            outline: solid $color_red-error thin;
+            }
+        }
+    }
+
+    &-errors {
+        color: $color_red-error;
+        border-radius: 3px;
+        font-size: 10px;
+    
+        &.down {
+          position: absolute;
+          left: 0;
+          top: 65px;
+        }
+    }
+}
+
+input[type="text"]:disabled {
+    background: #ccc;
+}

@@ -1,0 +1,27 @@
+{
+    "welcome": {
+        "text": "étapes de récupérer vos données d'achats auprès de vos marchands et de pouvoir accéder à tout un univers de services et d'avantages",
+        "link": "Lien vers le Manifesto",
+        "buttonText": "Suivant"
+    },
+    "editUser": {
+        "title": "Vos informations",
+        "subtitle": "Ces informations nous permettent de vous identifier auprès de vos marchands, merci de les vérifier et de les valider.",
+        "textCheckboxMerchant": "Je souhaite préselectionner tous les marchands présents sur la base de données unnidata",
+        "buttonText": "Suivant"
+    },
+    "confirmationCode": {
+        "title": "",
+        "subtitle": ""
+    },
+    "selectMerchants": {
+        "title": "Vos marchands",
+        "subtitleWithExpense": "Les demandes de portabilités seront envoyées uniquement aux marchands que vous fréquentez. Tous les sélectionner vous permet de ne pas avoir à faire une nouvelle demande si vous consommez un nouveau marchand",
+        "subtitleWithoutExpense": "Merci de sélectionner uniquement les marchands pour lesquels vous avez une carte de fidélité ou chez qui vous avez déjà fait une commande en ligne",
+        "buttonText": "Suivant"
+    },
+    "onboardingComplete": {
+        "subtitle": "Nous allons à présent nous rapprocher de chacun de vos marchands. La récupération des données peut prendre jusqu'à 1 mois…",
+        "subtitleTwo": "Un peu de patience et vous pourrez accéder aux données de vos tickets de caisse !"
+    }
+}

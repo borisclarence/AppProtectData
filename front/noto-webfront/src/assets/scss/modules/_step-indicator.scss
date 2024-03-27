@@ -1,0 +1,45 @@
+.editUserInformation,
+.onboardingComplete,
+.selectMerchants,
+.confirmationCode,
+.headerSteps {
+    &-step-indicator {
+        display: flex;
+        justify-content: space-between;
+
+        &.static {
+            width: 155px;
+        }
+        
+        width: 125px;
+
+
+
+        &[data-step="1"] {
+            span:nth-child(1) {
+                background-color: $color_darkgreen;
+            }
+        }
+        &[data-step="2"] {
+            span:nth-child(-n+2) {
+                background-color: $color_darkgreen;
+            }
+        }
+        &[data-step="3"] {
+            span:nth-child(-n+3) {
+                background-color: $color_darkgreen;
+            }
+        }
+        &[data-step="4"] {
+            span:nth-child(-n+4) {
+                background-color: $color_darkgreen;
+            }
+        }
+        span {
+            background-color: $color_athens-gray;
+            height: 5px;
+            width: 35px;
+            border-radius: 25px;
+        }
+    }
+}

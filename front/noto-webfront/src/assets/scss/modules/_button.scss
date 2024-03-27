@@ -1,0 +1,88 @@
+.btn {
+  display: block;
+  width: fit-content;
+  padding: 0;
+
+  &:hover, &:active, &:focus {
+    text-decoration: unset;
+    cursor: pointer;
+    box-shadow: unset;
+  }
+
+  &--blue {
+    position: relative;
+    background-color: $color_blue;
+    border-radius: 4px;
+    font-style: $font_bebas-neue;
+    font-weight: 700;
+    color: $color_white;
+    text-transform: uppercase;
+    padding: 8px 20px;
+
+    &:after {
+      @include right-arrow($color_white);
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 9px;
+    }
+  }
+}
+
+.welcomePage,
+.editUserInformation,
+.confirmationCode,
+.onboardingComplete,
+.selectMerchants {
+  &-button {
+    font-family: $font_bebas-neue;
+    border-radius: 4px;
+    padding: 8px 20px 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:active {
+      transform: scale(.9);
+    }
+  }
+
+  &-iconArrow {
+    width: 10px;
+  }
+}
+
+.selectMerchants {
+  &-button {
+    margin: 0 auto;
+  }
+}
+
+.welcomePage,
+.onboardingComplete,
+.selectMerchants {
+  &-button {
+    background: $color_blue;
+    color: $color_white;
+  }
+}
+
+.editUserInformation,
+.confirmationCode {
+  &-button {
+    background: rgba(93, 137, 218, 0.3);
+    color: rgba(20, 54, 66, 0.7);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $color_blue;
+      color: $color_white;
+    }
+  }
+}

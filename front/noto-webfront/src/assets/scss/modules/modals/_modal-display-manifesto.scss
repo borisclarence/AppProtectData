@@ -1,0 +1,134 @@
+.modalDisplayManifesto {
+  &-wrapper {
+    overflow: hidden;
+    align-items: end;
+  }
+
+  &-container {
+    padding: 8px 10px;
+    border: 1px solid $color_gull-gray;
+    width: 100%;
+    height: 90%;
+    animation: moveUp .4s ease-in;
+
+    @media screen and (min-width: 375px) {
+      width: 100%;
+      height: 65%;
+    }
+
+    @media screen and (min-width: 940px) {
+      border-bottom-left-radius: 38px;
+      border-bottom-right-radius: 38px;
+    }
+  }
+
+  &-body {
+    font-weight: 300;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    height: 750px;
+  }
+
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &-closeIcon {
+    font-size: 25px;
+  }
+
+  &-bar {
+    background-color: $color_athens-gray;
+    height: 4px;
+    width: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  &-title {
+    font-size: 27px;
+    font-weight: 300;
+    text-align: center;
+    font-family: $font_bebas-neue;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+
+  &-section {
+    height: 625px;
+    padding-top: 15px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;  /* Safari and Chrome */
+    }
+  }
+
+  &-actions {
+    display: flex;
+    justify-content: space-between;
+    max-width: 292px;
+    margin: 0 auto;
+  }
+
+  &-button {
+    width: fit-content;
+    display: block;
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 8px 20px 5px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $font_bebas-neue;
+    text-transform: uppercase;
+    background: $color_blue;
+    color: $color_white;
+
+    &--light {
+      background: rgba(93, 137, 218, 0.3);
+      color: rgba(20, 54, 66, 0.7);
+    }
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform:translateY(100%);
+    top: 0%;
+  }
+  100% {
+    transform:translateY(0);
+    top: 50%;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform:translateY(0px);
+  }
+  100% {
+    transform:translateY(150px);
+  }
+}
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  background: rgba(0, 0, 0, 0.5);
+  animation: moveDown .5s ease-out;
+}
+.slide-fade-enter,
+.slide-fade-leave {
+  transform: translateY(500px);
+  opacity: 0;
+}

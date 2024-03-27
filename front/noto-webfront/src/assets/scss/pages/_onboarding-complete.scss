@@ -1,0 +1,117 @@
+.onboardingComplete {
+  &-content {
+    @media screen and (min-width: 940px) {
+      padding-top: 12px;
+    }
+  }
+
+  &-step-indicator {
+    display: flex;
+    justify-content: space-between;
+    width: 185px;
+
+    &[data-step="1"] {
+      span:nth-child(1) {
+        background-color: $color_elephant;
+      }
+    }
+    &[data-step="2"] {
+      span:nth-child(-n + 2) {
+        background-color: $color_elephant;
+      }
+    }
+    &[data-step="3"] {
+      span:nth-child(-n + 3) {
+        background-color: $color_elephant;
+      }
+    }
+    &[data-step="4"] {
+      span:nth-child(-n + 4) {
+        background-color: $color_elephant;
+      }
+    }
+    span {
+      background-color: $color_athens-gray;
+      height: 6px;
+      width: 40px;
+      border-radius: 20px;
+    }
+  }
+
+  &-section {
+    margin: 5px 0;
+    padding: 25px 15px;
+  }
+
+  &-title {
+    position: relative;
+    font-size: 53px;
+    font-weight: 700;
+    font-family: $font_bebas-neue;
+    text-transform: uppercase;
+    color: $color_blue;
+    line-height: 55px;
+    text-align: center;
+  }
+
+  &-title {
+    img {
+      max-width: 140px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    > div {
+      color: $color_blue;
+      font-size: 53px;
+      line-height: 55px;
+      text-align: center;
+      margin-top: -88px;
+    }
+  }
+
+  &-subtitle {
+    font-size: 16px;
+    color: $color_black;
+    line-height: 20px;
+    text-align: center;
+    padding: 18% 15px 0;
+  }
+
+  &-subtitleOne {
+    padding: 10px 0;
+  }
+
+  &-declined {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+  }
+
+  &-titleDeclined {
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: $font_bebas-neue;
+    text-transform: uppercase;
+    color: $color_blue;
+    line-height: 55px;
+    text-align: center;
+
+    img {
+      max-width: 50%;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    > div {
+      color: $color_blue;
+      font-size: 50px;
+      line-height: 55px;
+      text-align: center;
+      margin-top: -95px;
+    }
+  }
+}

@@ -1,0 +1,219 @@
+.editUserInformation {
+  color: $color_darkgreen;
+
+  @media screen and (min-width: 940px) {
+    height: 100%;
+  }
+
+  &-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 940px) {
+      min-height: 100%;
+    }
+  }
+
+  //&-header {
+  //  position: fixed;
+  //  top: 0;
+  //  left: 0;
+  //  width: 100%;
+  //  background-color: $color_white;
+  //
+  //  @media screen and (min-width: 940px) {
+  //    left: 28px;
+  //    top: 40px;
+  //    width: 372px;
+  //    border-top-left-radius: 35px;
+  //    border-top-right-radius: 35px;
+  //  }
+  //}
+
+  &-formContent {
+    flex-grow: 1;
+
+    @media screen and (min-width: 940px) {
+      height: calc(752px/2);
+    }
+  }
+
+  &-content {
+    padding: 0 15px;
+    max-width: 100%;
+
+    @media screen and (min-width: 940px) {
+      padding-top: 9px;
+      min-height: 745px;
+    }
+  }
+
+  &-section {
+    overflow-y: auto;
+    scrollbar-color: $color_darkgreen $color_athens-gray;
+    scrollbar-width: thin;
+    max-width: 100%;
+    height: calc(100vh - 120px);
+    margin: 60px auto 0;
+    padding: 0 4px 30px 5px;
+
+    @media screen and (min-width: 940px) {
+      height: 47em;
+    }
+  }
+
+  &-title {
+    font-size: 27px;
+    font-family: $font_bebas-neue;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 32px;
+  }
+
+  &-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 3px;
+  }
+
+  &-fields {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-checkCGU {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+
+    @media screen and (min-width: 480px) and (max-width: 940px) {
+      margin-top: 60px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .editUserInformation-inputCGU {
+      background: $color_oyster-pink;
+    }
+
+    &.space {
+      padding-bottom: 50px;
+    }
+  }
+
+  &-label {
+    color: $color_manatee;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: left;
+  }
+
+  &-newMails {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  &-input {
+    outline: solid $color_white thin;
+    border: 1px solid $color_white;
+    margin-top: 5px;
+    background: rgb(241, 241, 243);
+    border-radius: 25px;
+    padding: 10px 16px;
+
+    input {
+      background: rgb(241, 241, 243);
+    }
+
+    &:focus {
+      border: 1px solid $color_gull-gray;
+      outline: solid $color_gull-gray thin;
+      background-color: $color_platinium;
+    }
+
+    &.error_input {
+      background: $color_oyster-pink;
+      border-radius: 25px;
+      padding: 10px 16px;
+      border: 1px solid $color_red-error;
+
+      &:focus {
+        outline: solid $color_red-error thin;
+      }
+    }
+  }
+
+  &-ul_errors {
+    color: $color_red-error;
+  }
+  
+  &-errors {
+    color: $color_red-error;
+    border-radius: 3px;
+    font-size: 10px;
+
+    &.down {
+      position: absolute;
+      left: 0;
+      top: 65px;
+    }
+  }
+
+  &-iconSign {
+    color: $color_gull-gray;
+    font-size: 12px;
+  }
+
+  .editUserInformation-section::-webkit-scrollbar {
+    width: 2px;
+  }
+  .editUserInformation-section::-webkit-scrollbar-track {
+    background: $color_athens-gray;
+  }
+
+  .editUserInformation-section::-webkit-scrollbar-thumb {
+    background: $color_darkgreen;
+  }
+
+  &-preSelectMerchant {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  &-text {
+    margin: 0 12px;
+    color: $color_silver-chalice;
+    font-size: 14px;
+  }
+
+  &-links {
+    color: $color_blue;
+    text-decoration: underline;
+    text-decoration-color: $color_blue;
+  }
+
+  &-button {
+    &:hover, &:focus {
+      background: $color_havelock-blue;
+      color: $color_white;
+    }
+
+    &.active {
+      background: $color_havelock-blue;
+      color: $color_white;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.confirmationCode {
+  color: $color_darkgreen;
+  
+  &-wrapper {
+    padding: 15px;
+  }
+
+  &-section {
+    margin: 20px 0;
+    padding: 35px 0;
+  }
+
+  &-title {
+    font-size: 27px;
+    font-weight: bold;
+    font-family: $font_bebas-neue;
+    text-transform: uppercase;
+    line-height: 32px;
+  }
+
+  &-description {
+    font-size: 14px;
+  }
+
+  &-form {
+    padding: 25px 0;
+  }
+
+  &-fields {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+  }
+
+  &-label {
+    color: $color_manatee;
+    font-size: 12px;
+    line-height: 17px;
+    padding-left: 12px;
+  }
+
+  &-input {
+    outline: none;
+    margin-top: 5px;
+    background: rgb(241, 241, 243);
+    border-radius: 25px;
+    padding: 10px 16px;
+    width: 100%;
+
+    input {
+      background: rgb(241, 241, 243);
+    }
+
+    &:focus {
+      border: 1px solid $color_gull-gray;
+      outline: solid $color_gull-gray thin;
+    }
+
+    &.error_input_code {
+      background: $color_oyster-pink;
+      border-radius: 25px;
+      padding: 10px 16px;
+      border: 1px solid $color_red-error;
+  
+      &:focus {
+        outline: solid $color_red-error thin;
+      }
+    }
+  }
+
+  &-inputValidated {
+    width: 100%;
+  }
+
+  &-iconConfirmation {
+    width: 5%;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+
+    @media (min-width: 488px) and (max-width: 939px) {
+      width: 3%;
+    }
+  }
+
+  
+
+  &-errors {
+    color: $color_red-error;
+    border-radius: 3px;
+    font-size: 10px;
+  }
+
+  &-errorValidatedCode {
+    color: $color_red-error;
+    font-size: 10px;
+
+    width: 75%;
+  }
+
+  &-messages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &-link {
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    text-align: right;
+    color: $color_blue;
+    text-decoration: underline;
+    text-decoration-color: $color_blue;
+    position: absolute;
+    right: 14%;
+  }
+
+  &-spans {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    padding: 10px 12px;
+  }
+
+  &-icon {
+    width: 10px;
+  }
+
+  &-button {
+    &:hover, &:focus {
+      background: $color_havelock-blue;
+      color: $color_white;
+    }
+
+    &.active {
+      background: $color_havelock-blue;
+      color: $color_white;
+    }
+  }
+}

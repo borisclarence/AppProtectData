@@ -1,0 +1,30 @@
+body {
+  font-size: 14px;
+  font-weight: 400;
+  color: $color_darkgreen;
+  font-family: $font_gudea;
+
+  @media screen and (min-width: 940px) {
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .device-frame > div {
+    @media screen and (min-width: 940px) {
+      height: 100%;
+      background-color: $color_white;
+      border-radius: 35px;
+    }
+  }
+}
+
+.editUserInformation,
+.welcomePage,
+.onboardingComplete,
+.selectMerchants {
+  font-family: $font_gudea;
+}
